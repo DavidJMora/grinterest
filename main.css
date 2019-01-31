@@ -1,32 +1,34 @@
 #container {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr 1fr;
-    grid-template-rows:  1fr 5fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows:  160px 10fr 1fr;
     border: 1px solid black;
     height: 95vh;
-    /* width: 95vw; */
+    width: 99vw;
     
 }
 #header {
     display: grid;
-    grid-column: 1 / span 4 ;
-    border: 1px solid black;
+    grid-column: 1 / 4;
+    border: 4px solid yellowgreen;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: black;
 }
 #content {
     display: grid;
-    grid-column: 2 / 4;
+    grid-column: 2 / 3;
     grid-row: 2 / 3;
     border: 1px solid black; 
 }
 #sidebar {
     display: grid;
-    grid-column: 4 / 5;
+    grid-column: 3/ 4;
     grid-row: 2 / 3;
     border: 1px solid blue;
 }
 #footer {
     display: grid;
-    grid-column: 1 / span 4;
+    grid-column: 1 / 4;
     border: 1px solid black;
 }
 #navbar {
@@ -41,22 +43,38 @@ ul {
   padding: 0;
 }
 #title {
-    display: grid;
+    grid-column: 2 / 3;
+    /* display: grid; */
     /* dont need template to center content */
     /* grid-template-columns: 1fr 3fr 1fr; */
     /* grid-template-rows: 1fr 1fr 1fr; */
-    background-color: black;
+    
 }
 .title {
     /* dont need display to center content */
     /* display: grid; */
-    grid-column: 2 / 3;
+    /* grid-column: 2 / 3; */
     justify-content: center;
     align-content: center;
     grid-row: 2 / 3;
     color: coral;
     font-size: 50px;
+    border: 1px solid yellow;
+    text-align: center;
+}
+.rasengan {
+    height: 300px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+    width: auto;
+    height: 100%;
+    justify-content: center;
+    place-self: center;
     
-    
-
+}
+.chidori {
+    grid-column: 3 / 4;
+    height: 92%;
+    width: 50%;
+    place-self: center;
 }
