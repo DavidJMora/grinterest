@@ -35,6 +35,11 @@
     grid-column: 1 / 2;
     border: 1px solid black;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 #title {
     display: grid;
     /* dont need template to center content */
